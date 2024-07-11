@@ -12,7 +12,7 @@
     <div class="sign-up"> 
         <h3>SIGN UP</h3>
         <h5>Don't you have an account yet ? sign up here</h5>
-        <form action="includes/signup.inc.php" method="post">
+        <form action="includes/sign.inc.php" method="post">
             <input type="text" name="uid" placeholder="Username">
             <input type="password" name="pwd" placeholder="Password">
             <input type="password" name="pwdrepeat" placeholder="Repeat Password">
@@ -28,11 +28,11 @@
             <input type="text" name="uid" placeholder= "Username">
             <input type="password" name="pwd" placeholder="password">
             <br>
-            <button type="submit" name="submit">LOGIN</button>
+            <button type="submit" name="submit">LOGIN</button><br>
         </form>
 
     </div>
 </section>
-    
+
 </body>
 </html>

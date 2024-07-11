@@ -19,3 +19,4 @@ $signup=new Signupcontr($uid,$pwd,$pwdrepeat,$email);
 $signup->signupuser();
 //send the user to the front page 
 header ("location: ../index.php?error=none");*/
+?>
