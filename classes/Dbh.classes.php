@@ -2,15 +2,15 @@
 
 class Dbh{
 
-    private $host="";
+    private $host="localhost";
     private $user="";
-    private $pwd="";
+    private $pwd="root";
     private $dbname="OOPLogin ";
 
     protected function connect(){
         try {
             $dsn='mysql:host='.$this->host.';dbname='.$this->dbname;
-            $pdo=new PDO($dsn,$user,$pwd);
+            $pdo=new PDO($dsn,$this->user,$this->pwd);
 
             return $pdo;
         }

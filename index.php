@@ -9,7 +9,7 @@
 
 
 <section class="login-system">
-    <div class="sign-up">
+    <div class="sign-up"> 
         <h3>SIGN UP</h3>
         <h5>Don't you have an account yet ? sign up here</h5>
         <form action="includes/signup.inc.php" method="post">
@@ -18,7 +18,7 @@
             <input type="password" name="pwdrepeat" placeholder="Repeat Password">
             <input type="text" name="email" placeholder ="E-mail">
             <br>
-            <button type="submit" name="sunmit">SIGN UP</button>
+            <button type="submit" name="submit">SIGN UP</button>
         </form>
     </div>
     <div class="log-in">
