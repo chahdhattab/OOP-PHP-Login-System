@@ -14,4 +14,4 @@ if (isset($_POST["submit"])) {
 $newuser=new Signing($fullname,$pwd,$pwdrpt,$email);
 $newuser->signupNewUser();
 
-echo "Welcome".$fullname;
+echo "<br> Welcome". $fullname;
