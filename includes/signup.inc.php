@@ -1,22 +1,17 @@
 <?php
-echo"hello";
-//grapping data from the userinput
-if(isset($_POST["submit"])){
-    $uid=$_POST["uid"];
-    $pwd=$_POST["pwd"];
-    $pwdrepeat=$_POST["pwdrepeat"];
-    $email=$_POST["email"];
+
+include "../classes/Dbh.class.php";
+include "../classes/SignupDB.class.php";
+include "../classes/Signup.class.php";
+
+if (isset($_POST["submit"])) {
+    $fullname = $_POST["fname"];
+    $pwd = $_POST["pwd"];
+    $pwdrpt=$_POST['pwdrepeat'];
+    $email = $_POST["email"];
 }
 
-echo"user = ".$uid;
+$newuser=new Signing($fullname,$pwd,$pwdrpt,$email);
+$newuser->signupNewUser();
 
-/*//intantiate a user
-include "class-autoload.inc.php";
-
-$signup=new Signupcontr($uid,$pwd,$pwdrepeat,$email); 
-
-//Running error Handlers and user signup
-$signup->signupuser();
-//send the user to the front page 
-header ("location: ../index.php?error=none");*/
-?>
+echo "Welcome".$fullname;
