@@ -4,7 +4,7 @@ class Dbh {
     private $host = "localhost";
     private $user = "root";
     private $pwd = "";
-    private $dbName = "Github";
+    private $dbName = "gestion_factures";
 
     protected function connect() {
         $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbName;
